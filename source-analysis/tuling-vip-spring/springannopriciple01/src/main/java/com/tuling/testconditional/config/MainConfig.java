@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Conditional;
  */
 public class MainConfig {
 
-    //@Bean
+    @Bean
     public TulingAspect tulingAspect() {
         return new TulingAspect();
     }
