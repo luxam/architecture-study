@@ -11,7 +11,6 @@ import org.springframework.core.type.AnnotatedTypeMetadata;
 public class TulingCondition implements Condition {
 
     /**
-     *
      * @param context
      * @param metadata
      * @return
@@ -19,7 +18,7 @@ public class TulingCondition implements Condition {
     @Override
     public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
         //判断容器中是否有tulingAspect的组件
-        if(context.getBeanFactory().containsBean("tulingAspect")) {
+        if (context.getBeanFactory().containsBean("tulingAspect")) {
             return true;
         }
         return false;

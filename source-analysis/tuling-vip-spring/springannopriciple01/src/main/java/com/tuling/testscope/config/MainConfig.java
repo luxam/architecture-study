@@ -17,8 +17,8 @@ public class MainConfig {
      * @return
      */
     @Bean
-    @Lazy
-    //@Scope(scopeName = "prototype")
+//    @Lazy
+    @Scope(scopeName = "prototype")
     public Person person() {
         return new Person();
     }
